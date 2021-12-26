@@ -64,6 +64,7 @@ else:
 pageget = requests.post("https://pastebin.com/api/api_post.php", headers=headers, data=data)
 response = pageget.content.decode('utf-8')
 
+# throwing more concise error in case of API error
 if "Bad API request" not in response:
   # printing pastebin link
   print(f"""Your paste is at:
