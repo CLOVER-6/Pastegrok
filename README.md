@@ -25,7 +25,7 @@ And run setup.py with your PasteBin API devkey (https://pastebin.com/doc_api) as
 That's it! Now you may run Pastegrok like so:
 
 ---------------------------------------------------------------------------------
-> pastegrok [OPTIONS DESCRIBED IN PASTEGROK HELP]
+> pastegrok [TIME TILL PASTE EXPIRATION]
 ---------------------------------------------------------------------------------
 
 Thanks for using Pastegrok!!!! :)
