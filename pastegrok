@@ -6,6 +6,12 @@ import sys
 
 time = sys.argv[1] 
 
+if not len(sys.argv) == 1:
+    print("""Usage: pastegrok [time]
+             
+             time    -    when your post should expire | N(ever), 10M(inutes), 1H(our), 1D(ay),
+                          1W(eek), 2W(eeks), 1M(onth), 6M(onths), 1Y(ear)""")
+    
 # requesting and receiving all running ngrok tunnels
 with requests.get("http://127.0.0.1:4040/api/tunnels") as ngrok_tunnels:
     ngrok_content = ngrok_tunnels.content
