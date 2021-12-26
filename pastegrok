@@ -62,4 +62,6 @@ else:
 pageget = requests.post("https://pastebin.com/api/api_post.php", headers=headers, data=data)
 
 # printing pastebin link
-print(pageget.content)
+print(f"""Your paste is at:
+
+{pageget.content.decode('utf-8')}""")
