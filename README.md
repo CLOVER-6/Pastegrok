@@ -29,3 +29,13 @@ That's it! Now you may run Pastegrok like so:
 ---------------------------------------------------------------------------------
 
 Thanks for using Pastegrok!!!! :)
+  
+### Notes
+  
+There are 2 - as far as I am aware - unfixable bugs to do with the handling of usernames/passwords in either the terminal or POST request to Pastebin when executing setup.py. This is due to username and password syntax (equals signs, ampersandes, crocodile symbols, etc) conflicting with terminal and POST request data and may cause "Bad API request, invalid login" errors or general weirdness in the terminal.
+  
+If you recieve either bug, the simplest fix is to simply quote out the password/username - like so:
+
+---------------------------------------------------------------------------------
+> python3 setup.py <DEVKEY> testuser "big&error>>"
+---------------------------------------------------------------------------------
