@@ -73,4 +73,4 @@ if "Bad API request" not in response:
 else:
   print(f"""A request error occurred, this could be to do with your username/password syntax (see README.md notes) or external problems
   
-  {reponse}""")
+  {response}""")
