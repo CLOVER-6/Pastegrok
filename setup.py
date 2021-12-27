@@ -37,7 +37,9 @@ if "Bad API request" not in userkey:
 	# replace every "<USERKEY>" in sourcepaste with a user's actual API user key
 	file.write_text(file.read_text().replace('<USERKEY>', userkey))
 else:
-	print("A request error occurred, this could be to do with your username/password syntax (see README.md notes) or external problems")
+	print("""A request error occurred, this could be to do with your username/password syntax (see README.md notes) or external problems
+	
+	{userkey}""")
 	
 # copy sourcepaste to /usr/bin, for ease of use
 to_file = Path("/usr/bin")
