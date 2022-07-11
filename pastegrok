@@ -32,10 +32,10 @@ headers = {
 # + making all posts private (for security) and setting time till expiration
 if b"""proto":"tcp""" in ngrok_content:
     data = {
-        "api_dev_key": "45R7KVu1p3EB4UKJ0-q7t5Kzgzdw2otu",
+        "api_dev_key": "<DEVKEY>",
         "api_paste_code": ngrok_content,
         "api_option": "paste",
-        "api_user_key": "c45760308c32863796ddeefc3e092eba",
+        "api_user_key": "<USERKEY>",
         "api_paste_expire_date": parse_args.time,
         "api_paste_private": "2",
         "api_paste_name": "udp, but dogshit ;)",
@@ -43,10 +43,10 @@ if b"""proto":"tcp""" in ngrok_content:
     }
 elif b"""proto":"http""" in ngrok_tunnels.content:
     data = {
-        "api_dev_key": "45R7KVu1p3EB4UKJ0-q7t5Kzgzdw2otu",
+        "api_dev_key": "<DEVKEY>",
         "api_paste_code": ngrok_content,
         "api_option": "paste",
-        "api_user_key": "c45760308c32863796ddeefc3e092eba",
+        "api_user_key": "<USERKEY>",
         "api_paste_expire_date": parse_args.time,
         "api_paste_private": "2",
         "api_paste_name": "hatettp",
@@ -54,10 +54,10 @@ elif b"""proto":"http""" in ngrok_tunnels.content:
     }
 else:
     data = {
-        "api_dev_key": "45R7KVu1p3EB4UKJ0-q7t5Kzgzdw2otu",
+        "api_dev_key": "<DEVKEY>",
         "api_paste_code": ngrok_content,
         "api_option": "paste",
-        "api_user_key": "c45760308c32863796ddeefc3e092eba",
+        "api_user_key": "<USERKEY>",
         "api_paste_expire_date": parse_args.time,
         "api_paste_private": "2",
         "api_paste_name": "gettin-creative",
