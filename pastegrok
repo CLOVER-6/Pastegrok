@@ -38,7 +38,7 @@ if b"""proto":"tcp""" in ngrok_content:
         "api_user_key": "<USERKEY>",
         "api_paste_expire_date": parse_args.time,
         "api_paste_private": "2",
-        "api_paste_name": "udp, but dogshit ;)",
+        "api_paste_name": "udp, but trash ;)",
         "api_paste_format": "json",
     }
 elif b"""proto":"http""" in ngrok_tunnels.content:
