@@ -40,9 +40,3 @@ privacy     how private you want your ngrok tunnel to be (IMPORTANT: PRIVATE
               RECOMMENDED) | 0 = Public 1 = Unlisted 2 = Private | Default = 2
 
 ---------------------------------------------------------------------------------
-
-### Notes
-  
-There are 2 unfixable (unfixable as far as I am aware, reach out if you are aware of a fix) bugs to do with the handling of usernames/passwords in either the terminal or POST request to Pastebin when executing setup.py. This is due to username and password syntax (equals signs, ampersandes, crocodile symbols, etc) conflicting with terminal and POST request data and may cause "Bad API request, invalid login" errors or general weirdness in the terminal.
-  
-You can try quoting out the password and/or username, but from my tests that just causes API issues. There is genuinely no fix for this I'm pretty sure.
